@@ -1,0 +1,23 @@
+.happyBirthday {
+  background-color: #f6ee80;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.valentine {
+  background-color: #f5abd0;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.congrats {
+  background-color: #e5b4f4;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 20px;
+}
