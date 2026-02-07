@@ -1,0 +1,79 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Page setup */
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Counter container */
+#root {
+  background: #ffffff;
+  padding: 40px 50px;
+  border-radius: 16px;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+/* Count text */
+h1 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+/* Button container */
+button {
+  padding: 12px 22px;
+  margin: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+/* Increment */
+button:nth-of-type(1) {
+  background-color: #4caf50;
+  color: white;
+}
+
+button:nth-of-type(1):hover {
+  background-color: #43a047;
+}
+
+/* Decrement */
+button:nth-of-type(2) {
+  background-color: #f44336;
+  color: white;
+}
+
+button:nth-of-type(2):hover {
+  background-color: #e53935;
+}
+
+/* Reset */
+button:nth-of-type(3) {
+  background-color: #ff9800;
+  color: white;
+}
+
+button:nth-of-type(3):hover {
+  background-color: #fb8c00;
+}
+
+/* Click feedback */
+button:active {
+  transform: scale(0.95);
+}
