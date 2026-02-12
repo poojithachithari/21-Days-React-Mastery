@@ -1,0 +1,96 @@
+/* Clock Container */
+.clock-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 20px;
+}
+
+.clock-container h1 {
+  color: white;
+  font-size: 3rem;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  animation: fadeIn 1s ease-in;
+}
+
+/* Time Display */
+.time-display {
+  background: white;
+  padding: 40px 60px;
+  border-radius: 20px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  font-size: 4rem;
+  font-weight: bold;
+  color: #667eea;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+  animation: slideUp 0.8s ease-out;
+  font-family: 'Courier New', monospace;
+}
+
+/* Date Display */
+.date-display {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  padding: 20px 40px;
+  border-radius: 15px;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 500;
+  animation: slideUp 0.8s ease-out 0.2s both;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .clock-container h1 {
+    font-size: 2rem;
+  }
+
+  .time-display {
+    font-size: 2.5rem;
+    padding: 30px 40px;
+  }
+
+  .date-display {
+    font-size: 1.2rem;
+    padding: 15px 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .time-display {
+    font-size: 2rem;
+    padding: 20px 30px;
+    letter-spacing: 2px;
+  }
+
+  .date-display {
+    font-size: 1rem;
+  }
+}
