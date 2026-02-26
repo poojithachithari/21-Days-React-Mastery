@@ -4,5 +4,5 @@
 - **Mini Project:** App with intentional errors and graceful error handling UI
 
 Reference:
-- Coden Solutions (https://www.youtube.com/watch?v=OQQAv8t3bfc)
+- Cosden Solutions (https://www.youtube.com/watch?v=OQQAv8t3bfc)
 - CoderOne (https://www.youtube.com/watch?v=0LpLxEUephc)
